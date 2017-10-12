@@ -17,6 +17,7 @@ end
 
 def destroy
   Dose.find(params[:id]).destroy
+  redirect_to cocktails_path
 end
 
 private
