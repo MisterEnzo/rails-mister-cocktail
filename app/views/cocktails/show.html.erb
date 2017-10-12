@@ -3,6 +3,13 @@
    <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
       <%= @cocktail.name %>
+      <% @cocktail.doses.each do |dose| %>
+      <p><%= dose.ingredient.name %> - <%= dose.description %></p>
+      <% end %>
+      <hr>
+      <%= link_to "Add a Dose of Ingredient", new_cocktail_dose_path(@cocktail)  %>
+      <p></p>
+      <%= link_to "All Cocktails", cocktails_path %>
     </div>
   </div>
 </div>
