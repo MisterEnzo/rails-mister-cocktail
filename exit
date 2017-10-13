@@ -1,0 +1,12 @@
+[0G[1] pry(main)> exiq
+NameError: undefined local variable or method `exiq' for main:Object
+Did you mean?  exit
+from (pry):1:in `<main>'
+[2] pry(main)>   
+[2] pry(main)> 
+[2] pry(main)> 
+[3] pry(main)> 2342q4
+SyntaxError: unexpected tIDENTIFIER, expecting end-of-input
+[3] pry(main)> 1243
+=> [1;34m1243[0m
+[4] pry(main)>   dfsfs
