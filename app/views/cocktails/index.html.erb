@@ -1,13 +1,22 @@
 
 <div class="container">
-  <h1 class="text-center">INDEX</h1>
+  <h1 class="text-center">Pokemon Cocktails</h1>
   <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-inverse text-center" %>
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <% @cocktails.each do |cocktail| %>
-      <p><%= cocktail.id %> - <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </p>
-      <% end %>
-    </div>
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card"
+          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                 url('<%= cl_image_path 'pokeball.png', height: 100, width: 100 %>')">
+          <div class="card-category">Cocktail</div>
+          <div class="card-description">
+            <p><%= cocktail.id %> - <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </p>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
 
