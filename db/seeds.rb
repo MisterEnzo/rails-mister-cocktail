@@ -20,7 +20,7 @@ Ingredient.create(name: "sparkling water")
 
 # cocktails
 puts "seeding cocktails.."
-10.times do
+6.times do
   Cocktail.create(
     name: Faker::Pokemon.name
     )
